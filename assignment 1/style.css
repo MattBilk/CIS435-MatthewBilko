@@ -1,9 +1,19 @@
 :root {
-  --main-color: #FFFFFF;
+  --primary-color: #FFFFFF;
   --text-on-primary: #000000;
+
+
+  --secondary-color: #D3D3D3
+  --text-on-secodary: #FFFFFF
 }
 
 header, footer {
   backgeound-color: var(--primary-color);
   color var(--text-on-primary);
 }
+
+.secondary-section {
+  background-color: var(--secondary-color);
+  color: var(--text-on-secondary);
+}
+
