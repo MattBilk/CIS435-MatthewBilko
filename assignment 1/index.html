@@ -3,39 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale 1.0">
-  <title>Tilted Towers Brochure</title>
+    <title>Tilted Towers Brochure</title>
   
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
+  
 <body>
-  <nav class="navbar">
 
-    <div class="logo">
-        <a href="#">MySite</a>
-    </div>
+<header>
+  <div style="padding: 20px;">  
+        <h1> Welcome to Tilted Towers! </h1>
 
-  <u1 class="nav-links">
-    <li><a href=#index>Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="packages.html">Packages</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </u1>
-</nav>
+      <u1 class="nav-links">
+        <li><a href=#index>Home</a></li>
+        <li><a href=#about>About</a></li>
+        <li><a href=#packages>Packages</a></li>
+        <li><a href=#contact>Contact</a></li>
+      </u1>
+    </nav>
+   </div>
 
-<div style="padding: 20px;">  
-    <h1> Welcome to Tilted Towers! </h1>
+</header>
+  
+<main>
 
-</div>
-          
-</body>
+  <section id="about">
+    <h2>About Tilted Towers</h2>
+      <p>
+        Placeholder
+      </p>
+
+    <img src="Tilted_Towers.png" alt="View of Tilted Towers">
+  </section>
+
+  <section id="packages">
+    <h2>Travel Packages</h2>
+
+      <table>
+        <thread>
+          <tr>
+            <th>Placeholder</th>
+            <th>Placeholder</th>
+           <th>Placeholder</th>
+          </tr>
+        </thread> 
+
+        <tbody>
+          <tr>
+            <td>placeholder</td>
+           <td>placeholder</td>
+            <td>placeholder</td>
+          </tr>
+        </tbody>
+      </table>
+  </section>
+
+  <section id="contact">
+    <h2>Travel Inquiry</h2>
+
+      <form>
+
+        <label for="name">Name:</label>
+        <input type="text" id ="name" name="name">
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" email="email">
+
+        <label for="packages">Travel Package:></label>
+        <select id="package" name="package">
+          <option value="package1">Placeholder</option>
+          <option value="package2">Placeholder</option>
+        </select>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments"></textarea>
+
+        <button type="submit">Submit Inquiry</button>
+
+      </form>
+  </section>
+  
+</main>
 
 <footer>
-
-  
+  <h1>Travel       Explore      Enjoy</h1>   
 </footer>
 
-<h1>Travel       Explore      Enjoy</h1> 
+</body>
   
 </html>
