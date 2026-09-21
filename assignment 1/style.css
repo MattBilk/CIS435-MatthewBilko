@@ -1,1 +1,9 @@
+:root {
+  --main-color: #FFFFFF;
+  --text-on-primary: #000000;
+}
 
+header, footer {
+  backgeound-color: var(--primary-color);
+  color var(--text-on-primary);
+}
