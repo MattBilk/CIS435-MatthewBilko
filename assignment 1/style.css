@@ -46,3 +46,8 @@ a:hover {
 .btn-accent:hover {
   background-color: var(--accent-hover);
 }
+
+h1 {
+  text-align: center;
+
+}
