@@ -5,6 +5,10 @@
 
   --secondary-color: #D3D3D3
   --text-on-secodary: #FFFFFF
+
+   --accent-color: #007acc;
+  --accent-hover: #005999;
+  --text-on-accent: #FFFFFF;  
 }
 
 header, footer {
@@ -17,3 +21,28 @@ header, footer {
   color: var(--text-on-secondary);
 }
 
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.btn-accent {
+  background-color: var(--accent-color);
+  color: var(--text-on-accent);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-hover);
+}
