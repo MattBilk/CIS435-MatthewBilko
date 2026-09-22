@@ -71,4 +71,10 @@ h1 {
   display: flex;
   align-items: center;
   gap: 30px;
+  flex-direction: row;
+}
+
+#about div {
+  diplsay: flex;
+  flex-direction: column;
 }
