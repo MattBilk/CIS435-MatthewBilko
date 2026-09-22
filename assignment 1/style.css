@@ -92,6 +92,10 @@ h1 {
   font-size: 1.1rem;
 }
 
+#packages table {
+  color: #000000;
+}
+
 #contact form {
   background-color: #8B3FD1;
   display: grid;
