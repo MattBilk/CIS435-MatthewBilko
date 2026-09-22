@@ -95,3 +95,25 @@ h1 {
   font-weight: bold;
   font-size: 1.1rem;
 }
+
+#contact form {
+  display: fkex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contact input,
+#contact select,
+#contact textare {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #888;
+  border-radius: 4px;
+}
+
+#contact textarea {
+  min-height: 120px;
+  resize: vertical;
+}
