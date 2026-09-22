@@ -49,5 +49,12 @@ a:hover {
 
 h1 {
   text-align: center;
+}
 
+.nav-links {
+  display flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
 }
