@@ -93,11 +93,17 @@ h1 {
 }
 
 #contact form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: grid;
+  grid-template-colums: 130px 1fr;
+  gap: 15px;
   max-width: 500px;
   margin: 0 auto;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+#contact button {
+  grid-column: 2;
 }
 
 #contact input,
