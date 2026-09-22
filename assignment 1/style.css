@@ -13,7 +13,7 @@
 
 header, footer {
   backgeound-color: var(--primary-color);
-  color var(--text-on-primary);
+  color: var(--text-on-primary);
 }
 
 .secondary-section {
