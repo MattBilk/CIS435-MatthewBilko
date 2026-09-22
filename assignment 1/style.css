@@ -67,7 +67,6 @@ h1 {
   display: flex;
   align-items: center;
   gap: 30px;
-  flex-direction: row;
 }
 
 #packages table {
@@ -94,9 +93,6 @@ h1 {
   font-size: 1.1rem;
 }
 
-#packages table {
-  color: #000000;
-}
 
 #contact form {
   background-color: #8B3FD1;
@@ -150,7 +146,6 @@ h1 {
 
 footer {
   background-color: #FF8A00;
-  padding: 20px;
   text-align: center;
   padding: 25px;
   border-radius: 8px;
@@ -167,14 +162,9 @@ img {
 
 body {
   margin: 0;
-  width: 100%;
 }
 
-main {
-  width: 100%;
-}
-
-@media (max-wodth: 700px) {
+@media (max-width: 700px) {
   #about {
     flex-direction: column;
     text-align: center;
@@ -192,5 +182,5 @@ main {
 }
 
 section {
-  width 100%;
+  width: 100%;
 }
