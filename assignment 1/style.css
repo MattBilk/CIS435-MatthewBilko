@@ -86,6 +86,9 @@ h1 {
   overflow-x: auto;
   background-color: #4B9CD3;
   color: #000000;
+}
+
+#packages h2 {
   text-align: center;
 }
 
