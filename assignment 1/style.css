@@ -93,7 +93,7 @@ h1 {
 }
 
 #contact form {
-  display: fkex;
+  display: flex;
   flex-direction: column;
   gap: 10px;
   max-width: 500px;
@@ -141,4 +141,3 @@ footer {
   padding: 25px;
   border-radius: 8px;
 }
-
