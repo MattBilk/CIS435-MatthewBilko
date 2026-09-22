@@ -71,6 +71,7 @@ h1 {
 }
 
 #packages table {
+  min-width: 700px;
   width: 90%;
   margin: 20px auto;
   border-collapse: collapse;
@@ -83,6 +84,7 @@ h1 {
   text-align: center;
 }
 #packages {
+  overflow-x: auto;
   background-color: #4B9CD3;
   color: #000000;
 }
@@ -152,4 +154,26 @@ footer {
   text-align: center;
   padding: 25px;
   border-radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+section {
+  width 100%;
 }
