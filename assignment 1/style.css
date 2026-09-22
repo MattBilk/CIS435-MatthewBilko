@@ -52,7 +52,7 @@ h1 {
 }
 
 .nav-links {
-  display: flex;
+  display: flex !important;
   justify-content: center;
   gap: 30px;
   list-style: none;
