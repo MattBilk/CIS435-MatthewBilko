@@ -121,7 +121,7 @@ h1 {
 }
 
 #contact {
-  background-color: #A855F7;
+  background-color: #A855F7 !important;
   padding: 30px;
 }
 
