@@ -16,12 +16,6 @@ header {
   color: var(--text-on-primary);
 }
 
-footer {
-  background-color: #FF8A00;
-  color: FFFFFF;
-  padding: 20px;
-  text-align: center;
-}
 
 .secondary-section {
   background-color: var(--secondary-color);
@@ -137,6 +131,13 @@ h1 {
 
 #contact form {
   background-color: #8B3FD1;
+
+footer {
+  background-color: #FF8A00;
+  color: FFFFFF;
+  padding: 20px;
+  text-align: center;
+}
   padding: 25px;
   border-radius: 8px;
 }
