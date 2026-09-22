@@ -63,7 +63,7 @@ h1 {
 #about {
   background-color: #1E9B4B;
   color: #000000;
-  display: flex;
+  display: flex !important
   align-items: center;
   gap: 30px;
 }
