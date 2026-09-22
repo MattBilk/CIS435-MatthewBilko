@@ -71,7 +71,7 @@ h1 {
 
 #packages table {
   min-width: 0px;
-  width: 90%;
+  width: 100%;
   margin: 20px auto;
   border-collapse: collapse;
 }
