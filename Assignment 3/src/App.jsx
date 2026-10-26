@@ -7,9 +7,32 @@ function App() {
     const [phone, setPhone] = useState('')
     const [contacts, setContacts] = useState([])
     const [searchTerm, setSearchTerm] = useState('')
+    const [error, setError] = useState('')
 
     function handleSubmit(event) {
       event.preventDefault()
+
+      setError('')
+
+      const duplicateEmail = contacts.some(
+        (contact) => contact.email.toLowerCase() === email.trim().toLowerCase()
+      )
+
+     const duplicatePhone = phone.trim() !== '' && contacts.some(
+  (contact) => contact.phone.trim() === phone.trim()
+      )
+
+
+      if (duplicateEmail || duplicatePhone) {
+        setError(
+          duplicateEmail && duplicatePhone
+          ? 'Email and phone number is already in contact book'
+          : duplicateEmail
+            ? 'Email is already in contact book'
+            : 'Phone number is already in contact book'
+        )
+        return
+      }
 
       const newContact = {
         id: Date.now(),
@@ -77,7 +100,10 @@ function App() {
             />
           </div>
 
+           
+
           <div>
+            {error && <p className="error-message">{error}</p>}
             <button type="submit">Add Contact</button>
           </div>
         </form>
@@ -94,18 +120,20 @@ function App() {
 ) : filteredContacts.length === 0 ? (
     <p>No contacts match your search</p>
 ) : (
-  filteredContacts.map((contact) => (
-    <div key={contact.id}>
-      <p>{contact.name}</p>
-      <p>{contact.email}</p>
-      <p>{contact.phone}</p>
+<div className="contacts-grid">
+  {filteredContacts.map((contact) => (
+    <div className="contact-card" key={contact.id}>
+      <p><strong>{contact.name}</strong></p>
+      <p>Email: {contact.email}</p>
+      <p>Phone: {contact.phone || 'Not provided'}</p>
       <button onClick={() => handleDelete(contact.id)}>
-          Delete
+        Delete
       </button>
     </div>
-  ))
-)}
-    </section>
+  ))}
+</div>
+  )}  
+  </section>
       </main>
     </>
   )
